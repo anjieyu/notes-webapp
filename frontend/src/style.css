@@ -1,0 +1,22 @@
+:root {
+    --bg: black;
+    --card: rgb(6, 6, 78);
+    --border: rgb(57, 57, 147);
+    --text: white;
+    --accent: rgb(191, 255, 0);
+}
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+.app {
+    max-width: 880px;
+    margin: 0;
+    padding: 1.5rem 1rem 4rem;
+}
+h1 {
+    font-size: 1.6rem;
+}
