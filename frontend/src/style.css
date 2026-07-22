@@ -4,6 +4,7 @@
     --border: rgb(57, 57, 147);
     --text: white;
     --accent: rgb(191, 255, 0);
+    --muted: gray;
 }
 * {box-sizing: border-box;}
 body {
@@ -19,4 +20,37 @@ body {
 }
 h1 {
     font-size: 1.6rem;
+}
+button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 6px;
+    padding: 0.45rem 0.8rem;
+}
+button:hover {
+    border-color: var(--accent);
+}
+.notes {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1.25rem;
+}
+.note-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.note-list .new {
+    background: var(--accent);
+    color: var(--text);
+    border-color: var(--accent);
+}
+.note-list .empty {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+.note-item {
+    text-align: left;
 }
