@@ -25,6 +25,7 @@ button {
     font: inherit;
     cursor: pointer;
     border: 1px solid var(--border);
+    color: var(--text);
     background: var(--card);
     border-radius: 6px;
     padding: 0.45rem 0.8rem;

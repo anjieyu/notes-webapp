@@ -1,4 +1,4 @@
-import {createSignal} from 'solid-js';
+import {createSignal, For, Show} from 'solid-js';
 
 export function Notes(){
     const [notes, setNotes] = createSignal([]);
@@ -31,6 +31,9 @@ export function Notes(){
                         </button>
                     )}
                 </For>
+                <Show when={notes().length===0}>
+                    <p class='empty'>no notes yet</p>
+                </Show>
             </aside>
         </section>
     );
